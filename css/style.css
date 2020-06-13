@@ -1,0 +1,354 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+    /*********************/
+    /* Navigation Styles */
+    /*********************/
+
+.navbar{
+    padding: 22px 0;
+    border-radius: 0;
+    transition: all 1s ease-in-out;
+}   
+
+.navbar-brand > img{
+    height: 70px;
+    position: absolute;
+    top: 15px;
+}
+
+.navbar ul li a {
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: all 0.5s ease-in;
+}
+
+.navbar ul li a:hover{
+    color: orangered !important;
+    background-color: transparent !important;
+}
+
+.navbar-toggle{
+    border: 1px solid white !important;
+    color: white !important;
+    transition: all 0.5s ease-in;
+}
+
+.icon-bar{
+    background-color: white !important;
+}
+
+.navbar-toggle:hover{
+    background-color:orangered  !important;
+}
+
+.navbar-inverse{
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
+.navabar_background{            /*color for nav after slide*/
+    background-color: black;
+}
+
+    /************************/
+    /* Section Intro Styles */
+    /************************/
+
+.intro{
+    width: 100%;
+    height: 700px; 
+    background-image: url(/img/intro.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+}
+
+.intro_overlay{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.intro_content{
+    position: absolute;
+    top: 65%;
+    width: 100%;
+}
+
+.technologies .fab{
+    margin: 0 10px ;
+    font-size: 30px;
+    width: 40px;
+}
+
+.intro_buttons{
+    margin-bottom: 70px;
+}
+
+.btn_1{
+    margin-right: 90px;
+    display: inline-block;
+    width: 190px;
+    background-color: transparent;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: 1px solid white;
+    padding: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    color: white;
+    transition: all 0.2s ease-in;
+}
+
+.btn_2{
+    margin-left: 90px;
+    display: inline-block;
+    width: 190px;
+    background-color: transparent;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: 1px solid white;
+    padding: 10px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: white;
+    transition: all 0.2s ease-in;
+}
+
+.btn_1:hover{
+    text-decoration: none;
+    color: black;
+    background-color: orangered;
+    border-color: black;
+}
+
+.btn_2:hover{
+    text-decoration: none;
+    color: black;
+    background-color: orangered;
+    border-color: black;
+}
+
+.intro_text, .typed-cursor{
+    display: inline;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    height: 50px;
+}
+
+    /***************************/
+    /* Section Services Styles */
+    /***************************/
+
+.section-services{
+    padding-bottom: 100px;
+    background-image: url(/img/background_services.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.section-title h1{
+    letter-spacing: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+.intro_text, .typed-cursor{
+    display: inline;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-weight: bolder;
+}
+
+.txtcolor_1{
+    color:deepskyblue;
+}
+.txtcolor_2{
+    color: orangered;
+}
+.txtcolor_3{
+    color:green;
+}
+
+.icons_platforms .fab{
+    font-size: 40px;
+    margin: 20px 20px 0 20px;
+    color: black;
+} 
+
+.service-wrap{
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+    padding: 30px 50px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    margin-top: 30px;
+    z-index: 9;
+}
+
+.service-wrap::before, .service-wrap::after{
+    content: "";
+    height: 200%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 200%;
+    transition: all 0.5s;
+    opacity: 0;
+    background-color:#005963;
+    z-index: -9;
+}
+
+.service-wrap::before{
+    top: -37px;
+    left: 100%;
+}
+
+.service-wrap:hover:before{
+    left: -27px;
+    opacity: 1;
+    
+}
+
+.service-wrap::after{
+    right: 100%;
+    bottom: -40px;
+    
+}
+
+.service-wrap:hover:after{
+    opacity: 1;
+    right: -27px;
+}
+
+.service-wrap:hover{
+    color: white;
+}
+
+.service-icon i{
+    font-size: 40px;
+}
+
+    /***************************/
+    /* Section Projects Styles */
+    /***************************/
+
+.projects{
+    background: #E2E6E7;
+    padding-bottom: 50px;
+
+}
+
+.projects h1{
+    letter-spacing: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 0 0 40px 0;
+}
+
+.row-1{
+    margin-bottom: 20px;
+}
+
+.img-wrapper{
+    overflow: hidden;
+}
+
+.img-wrapper img{
+    transition: 0.5s ease; 
+}
+
+.img-wrapper img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+    /****************/
+    /* Section Team */
+    /****************/
+
+.team{
+    background: #E2E6E7;
+    height: 670px;
+}
+
+.team h1{
+    letter-spacing: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 0 0 40px 0;
+    color: wheat;
+}
+
+.carousel-inner img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 2px solid wheat;
+    padding: 5px;
+
+}
+
+.carousel-inner p{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.team{
+    background-image: url(/img/teambackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.team .carousel-indicators{
+    bottom: -40px;
+}
+
+    /*******************/
+    /* Section Reviews */
+    /*******************/
+
+    
+
+    /*****************/
+    /* Section Stats */
+    /*****************/
+
+.stats{
+    background-image: url(/img/world.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-attachment: fixed;
+    color: black;
+}
+
+.stats i{
+    font-size: 90px;
+}
+
+.stat-items h1{
+    font-weight: bolder;
+    font-size: 40px;
+    color: orangered;
+}
+
+.stat-items p{
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
