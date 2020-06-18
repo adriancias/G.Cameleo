@@ -18,9 +18,9 @@ jQuery(document).ready(function () {
         if (top >= 60) {
             $("nav").addClass('navabar_background');
         } else
-            if ($("nav").hasClass('navabar_background')) {
-                $("nav").removeClass('navabar_background');
-            }
+        if ($("nav").hasClass('navabar_background')) {
+            $("nav").removeClass('navabar_background');
+        }
     })
 
     $('.projects').magnificPopup({
@@ -32,10 +32,12 @@ jQuery(document).ready(function () {
         }
     });
 
+    $("#reviewers").owlCarousel();
+
     $('.counter').counterUp({
         delay: 10,
         time: 1000
     });
 
-});
 
+});
