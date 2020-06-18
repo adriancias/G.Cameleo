@@ -5,3 +5,9 @@ The idea: the idea was simple, creating a good-looking, resposive website using 
 what is nessesery to make it simple, clear and interesting. 
 
 Project is still in progress. 
+
+*
+*
+*
+
+What is G.Cameleo? Cameleo is a small company that creates websites, landing pages, web-projects, and anything that supposed to look good and work perfectly in the browser. 
